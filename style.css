@@ -96,7 +96,7 @@ nav {
 .nav-link {
   text-decoration: none;
   color: var(--mode-color);
-  font-weight: 600;
+  font-weight: 500;
   padding-inline: 15px;
   margin-inline: 20px;
 }
@@ -119,15 +119,15 @@ nav {
    left: 50%;
    bottom: -20px;
    transform: translate(-50%, 50%);
-   width: 80px;
-   height: 8px;
+   width: 65px;
+   height: 6px;
    background: var(--highlighter);
    border-radius: 10px;
 }
 .nav_menu_list .nav_list .nav-link{
   color: var(--logo-color);
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .nav_menu_list .nav_list .nav-link.active{
   color: var(--highlighter);
@@ -136,7 +136,7 @@ nav {
 
 .nav_menu_list .nav_list .nav-link:hover{
      color: var(--nav-color);
-     font-weight: 700;
+     font-weight: 600;
      background: var(--mode-color);
      border-radius: 10px;
      text-shadow: 1px 1px 1px var(--logo-color);
@@ -183,14 +183,23 @@ body.dark #moon {
 .sec-about{
   background-image: linear-gradient(to right, #f6f0f0, #ffffff, #ffff, #fff, #a8a4a4);
   padding: 2rem;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow),
+             -1px -8px 10px 2px var(--first-shadow),
+              1px 8px 10px 2px var(--first-shadow);
 }
 .sec-project{
   background-image: linear-gradient(to right, #f6f0f0, #ffffff, #ffff, #fff, #999595);
   padding: 2rem;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow),
+             -1px -8px 10px 2px var(--first-shadow),
+              1px 8px 10px 2px var(--first-shadow);
 }
 .sec-contact{
   background-image: linear-gradient(to right, #f6f0f0, #ffffff, #ffff, #fff, #908c8c);
   padding: 2rem;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow),
+             -1px -8px 10px 2px var(--first-shadow),
+              1px 8px 10px 2px var(--first-shadow);
 }
 
 /* ---featured box--- */
@@ -203,6 +212,9 @@ body.dark #moon {
   width: 100%;
   height: 100vh;
   min-height: 700px;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow),
+      -1px -8px 10px 2px var(--first-shadow),
+      1px 8px 10px 2px var(--first-shadow);
 }
 
 /* ---featured-text--- */
@@ -240,9 +252,15 @@ body.dark #moon {
   text-transform: capitalize;
 }
 .text-info {
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: .5px;
   font-size: 20px;
+  font-weight: 600;
   margin-bottom: 30px;
   color: var(--text-color);
+  text-indent: 50px;
 }
 
 .text-btn {
@@ -270,12 +288,7 @@ body.dark #moon {
   background: var(--nav-color);
   color: var(--logo-color);
 }
-.btn i {
-  margin-right: 10px;
-}
-i {
-  font-size: 16px;
-}
+
 /* --- social-media --- */
 .social-icons {
   display: flex;
@@ -283,7 +296,7 @@ i {
   margin-left: 5px;
   gap: 32px;
 }
-.social-icons .icon {
+.social-icons .icon a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,11 +307,12 @@ i {
   box-shadow: 0px 1px 5px 3px var(--gray-color);
   cursor: pointer;
 }
-.social-icons .icon:hover{
+.social-icons .icon a:hover{
   background: var(--logo-color);
   color: var(--box-color);
+  outline: 1px solid var(--highlighter);
 }
-.icon i{
+.icon a{
   font-size: 24px;
 }
 .icon_circle {
@@ -308,6 +322,9 @@ i {
   height: 50px;
   border-radius: 50px;
   animation: iconSlide 4s infinite alternate;
+}
+.icon a{
+  color: var(--logo-color)
 }
 
 @keyframes iconSlide {
@@ -376,6 +393,7 @@ i {
   justify-content: space-between;
   width: 100%;
   gap: 50px;
+  margin-bottom: 25rem;
 }
 .col {
   display: flex;
@@ -431,9 +449,11 @@ i {
 .about-me h2 {
   color: var(--text-color);
 }
-.about-me p {
+.about-me .about-paragraph {
   margin-top: 10px;
   color: var(--text-color);
+  text-indent: 50px;
+  text-align: justify;
 }
 .about-info .about-me-btn {
   text-decoration: none;
@@ -502,14 +522,16 @@ i {
 
 .cert-holder{
   position: relative;
-  top: -120%;
-  left: 0;
+  top: 200%;
+  left: -5%;
 }
 .certificate {
   position: absolute;
-  top: -100%; left:-10%;
+  top: -55%;
+  left:2%;
   transform: translateX(-50%);
-  width: 50rem;
+  width: 60rem;
+  height: 49rem;
   background: var(--box-color);
   border-radius: 20px;
   padding: 2rem;
@@ -581,6 +603,7 @@ i {
    justify-content: space-between;
    gap: 20px;
    flex-wrap: wrap;
+   margin-bottom: 20rem;
 }
 .project-box {
   position: relative;

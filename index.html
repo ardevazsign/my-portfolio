@@ -42,6 +42,7 @@
         <i class="fa fa-sun" id="sun"></i>
       </div>
     </div>
+
     <div class="nav-menu-btn">
       <i class="uil uil-bars" onclick="myMenuFunction()"></i>
     </div>
@@ -59,25 +60,25 @@
            </div>
            <div class="text-info">
               <p> 
-              I'm Owen, a Web Developer with one year of boot camp training experience 
-              and hold a certificate in this field.
-              I am confident and enthusiatic about creating websites for potential clients.
-              I am fully capable and eager to collaborate effectively with clients.
-                
+                       I'm Owen, a Web Developer with one year of boot camp training experience 
+              and hold a certificate in this field. I am confident and enthusiatic 
+              about creating websites for potential clients. I am fully capable and eager
+              to collaborate effectively with clients.  
               </p>
            </div>
            <div class="text-btn">
-              <button class="btn hire-btn">Hire Me</button>
-              <button class="btn"> Download CV<i class="uil uil-file"><a href="https://ardevazsign.github.io/OwenSaavedraCv"></a></i></button>
+              <button id="messageOwner" class="btn hire-btn">Hire Me</button>
+              <a href="https://ardevazsign.github.io/OwenSaavedraCv" target="_blank" class="uil uil-file btn"> View CV </a>
+              <a href="ardevazsign_github.pdf"  download  class="uil uil-file btn"> Download CV</a>
              
            </div>
            
            <div class="social-icons">
              <div class="icon_circle"></div>
-             <div class="icon"><i class="uil uil-instagram"></i></div>
-             <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-             <div class="icon"><i class="uil uil-behance-alt"></i></div>
-             <div class="icon"><i class="uil uil-github-alt"></i></div>
+             <div class="icon"><a href="https://www.instagram.com" target="_blank" class="uil uil-instagram-alt"></a></div>
+             <div class="icon"><a href="https://www.linkedin.com" target="_blank" class="uil uil-linkedin-alt"></a></div>
+             <div class="icon"><a href="https://www.facebook.com" target="_blank" class="uil uil-facebook"></a></div>
+             <div class="icon"><a href="https://www.github.com" target="_blank" class="uil uil-github-alt"></a></div>
            </div>
         </div>
         <div class="featured-image">
@@ -100,23 +101,15 @@
                 <figcaption>
                        <img src="./images/dos4dos.jpg" alt="ArdevazSign" class="profile" />
                        <h2>Web developer</h2>
-                       <p>My name is Owen! I,m Web Developer with almost 1 year of training and Certificate from GOIT.</p>
+                       <p class="about-paragraph">I'm Owen, a Web Developer with one year of boot camp training experience
+                      and hold a certificate in this field. I am confident and enthusiatic
+                      about creating websites for potential clients. I am fully capable and eager
+                      to collaborate effectively with clients.</p>
                 
                </figure>
-               <button class="about-me-btn">Hire Me</button>
+                  <a href="mailto:newojunior@gmail.com" class="about-me-btn"> Hire Me </a>
             </div>
           </div>
-
-           <div class="skill">
-              <div class="skill-box">
-                <span class="title" id="html">HTML</span>
-
-                <div class="skill-bar">
-                  <span class="skill-per html">
-                      <span class="tooltip">85%</span>
-                  </span>
-                </div>
-              </div>
 
               <div class="cert-holder">
                 <div class="certificate html">
@@ -131,7 +124,7 @@
 
                 <div class="certificate css">
                   <h3 class="cert-title"> Certificate for CSS </h3>
-                  <img src="images/Manuel C. Saavedra Jr..png" width="580" height="380" alt="ardevazsign">
+                  <img src="images/Manuel C. Saavedra Jr.-cct.jpg" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
                   <p class="cert-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ad!</p>
                   <p class="cert-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ad!</p>
@@ -141,7 +134,7 @@
 
                 <div class="certificate javascript">
                   <h3 class="cert-title"> Certificate javascript </h3>
-                  <img src="images/Manuel C. Saavedra Jr..png" width="580" height="380" alt="ardevazsign">
+                  <img src="images/Manuel C. Saavedra Jr.-esl.jpg" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
                   <p class="cert-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ad!</p>
                   <p class="cert-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ad!</p>
@@ -151,7 +144,7 @@
 
                 <div class="certificate react">
                   <h3 class="cert-title"> Certificate React.js </h3>
-                  <img src="images/Manuel C. Saavedra Jr..png" width="580" height="380" alt="ardevazsign">
+                  <img src="images/REVA certificate.png" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
                   <p class="cert-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ad!</p>
                   <p class="cert-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ad!</p>
@@ -160,6 +153,17 @@
                 </div>
 
               </div>
+
+                <div class="skill">
+                  <div class="skill-box">
+                    <span class="title" id="html">HTML</span>
+                
+                    <div class="skill-bar">
+                      <span class="skill-per html">
+                        <span class="tooltip">85%</span>
+                      </span>
+                    </div>
+                  </div>
 
               <div class="skill-box">
                 <span class="title" id="css">CSS</span>
@@ -257,15 +261,15 @@
             <a href="#projects">projects</a>
           </li>
           <li class="footer_menu_list">
-            <a href="#conatact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
       <div class="footer-social-icons">
-          <div class="icon-footer"><i class="uil uil-instagram footer-icon"></i></div>
-          <div class="icon-footer"><i class="fa-brands fa-linkedin-in footer-icon"></i></div>
-          <div class="icon-footer"><i class="uil uil-behance-alt footer-icon"></i></div>
-          <div class="icon-footer "><i class="uil uil-github-alt footer-icon"></i></div>
+          <div class="icon-footer"><i class="uil uil-instagram footer-icon"></i><a href="https://www.instagram.com"></a></div>
+          <div class="icon-footer"><i class="fa-brands fa-linkedin-in footer-icon"></i><a href="https://www.linkedin.com"></a></div>
+          <div class="icon-footer"><i class="uil uil-facebook footer-icon"></i><a href="https://www.facebook.com"></a></div>
+          <div class="icon-footer "><i class="uil uil-github-alt footer-icon"></i><a href="https://www.github.com"></a></div>
       </div>
       <div class="bottom-footer">
         <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ArdevazSign</a> | All rights reserved 2024</p>
@@ -274,6 +278,7 @@
   </div>
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-  <script src="./script.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
