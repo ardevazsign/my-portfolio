@@ -219,7 +219,7 @@ body.dark #moon {
 }
 
 .featured-text .hello {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   margin-bottom: -20px;
   color: var(--text-color);
@@ -240,7 +240,7 @@ body.dark #moon {
   text-transform: capitalize;
 }
 .text-info {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 30px;
   color: var(--text-color);
 }
