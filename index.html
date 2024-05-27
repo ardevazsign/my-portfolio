@@ -54,12 +54,23 @@
     <main class="wrapper">
       <section class="featured-box" id="home">
         <div class="featured-text">
-           <div class="hello">
-              <p>Hello!</p>
-           </div>
-           <div class="featured-name">
-            <span class="typedText"></span>
-           </div>
+
+        <!-- May 27, 2024  -->
+
+          <div class="hero-holder">
+            <div class="hello-static">
+              <p class="static-txt">Hello&nbsp;I'm&nbsp;a</p>
+            </div>
+            <ul class="dynamic-txts">
+              <li class="dynamic-txt"><span class="typedText">Freelancer</span></li>
+              <li class="dynamic-txt"><span class="typedText">Developer</span></li>
+              <li class="dynamic-txt"><span class="typedText">Designer</span></li>
+              <li class="dynamic-txt"><span class="typedText">Coder</span></li>
+            </ul>
+          </div>
+          
+        <!--    end here    -->
+
            <div class="text-info">
               <p> 
                        I'm Owen, a Web Developer with one year of boot camp training experience 
@@ -114,7 +125,7 @@
           </div>
 
               <div class="cert-holder" id="cert-holder">
-                <div class="certificate html" id="certificate">
+                <div class="certificate html" id="html">
                   <h3 class="cert-title"> Certificate for HTML </h3>
                   <img src="images/Manuel C. Saavedra Jr..png" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
@@ -124,7 +135,7 @@
                   <a href="#"  class="close-cert">close here</a>
                 </div>
 
-                <div class="certificate css" id="certificate">
+                <div class="certificate css" id="css">
                   <h3 class="cert-title"> Certificate for CSS </h3>
                   <img src="images/Manuel C. Saavedra Jr.-cct.jpg" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
@@ -134,7 +145,7 @@
                   <a href="#"  class="close-cert">close here</a>
                 </div>
 
-                <div class="certificate javascript" id="certificate">
+                <div class="certificate javascript" id="javascript">
                   <h3 class="cert-title"> Certificate javascript </h3>
                   <img src="images/Manuel C. Saavedra Jr.-esl.jpg" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
@@ -144,7 +155,7 @@
                   <a href="#" class="close-cert">close here</a>
                 </div>
 
-                <div class="certificate react" id="certificate">
+                <div class="certificate react" id="react">
                   <h3 class="cert-title"> Certificate React.js </h3>
                   <img src="images/REVA certificate.png" width="580" height="380" alt="ardevazsign">
                   <p class="cert-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, earum.</p>
@@ -158,7 +169,7 @@
 
                 <div class="skill">
                   <div class="skill-box">
-                    <span class="title" id="html">HTML</span>
+                    <span class="title" id="triggerA">HTML</span>
                 
                     <div class="skill-bar">
                       <span class="skill-per html">
@@ -168,7 +179,7 @@
                   </div>
 
               <div class="skill-box">
-                <span class="title" id="css">CSS</span>
+                <span class="title" id="triggerB">CSS</span>
                 <div class="skill-bar">
                   <span class="skill-per css">
                       <span class="tooltip">85%</span>
@@ -176,7 +187,7 @@
                 </div>
               </div>
               <div class="skill-box">
-                <span class="title" id="javascript">JavaScript</span>
+                <span class="title" id="triggerC">JavaScript</span>
                 <div class="skill-bar">
                   <span class="skill-per javascript">
                       <span class="tooltip">75%</span>
@@ -184,7 +195,7 @@
                 </div>
               </div>
               <div class="skill-box">
-                <span class="title" id="react">React.js</span>
+                <span class="title" id="triggerD">React.js</span>
                 <div class="skill-bar">
                   <span class="skill-per react">
                       <span class="tooltip">30%</span>
@@ -199,24 +210,129 @@
         <div class="top-header">
            <h1>Projects</h1>
         </div>
+<!-- popup start here -->
+
         <div class="project-container">
            <div class="project-box">
-               <i class="uil uil-briefcase-alt"></i>
+               <i class="uil uil-briefcase-alt" id="trigger1"></i>
                <h3>Completed</h3>
                <label>0 Finished Projects</label>
            </div>
+
+              <div id="popup" class="popup">
+                <h2 class="popup-title">Project Gallery</h2>
+                <div class="popup-main-content">
+                  <div class="project-image-holder">
+                    <h4 class="project-title">project name</h4>
+                    <img class="project-image" src="./images/images/1079609014.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                    <a class="link-here" href="https://ardevazsign.github.io/goit-teamproject-02">page link here</a>
+                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                  </div>
+                  <div class="project-image-holder">
+                    <h4 class="project-title">project name</h4>
+                    <img class="project-image" src="./images/images/1074550862.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                    <a class="link-here" href="">page link here</a>
+                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. Dignissimos, assumenda!</p>
+                  </div>
+                  <div class="project-image-holder">
+                    <h4 class="project-title">project name</h4>
+                    <img class="project-image" src="./images/images/1281728383.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                    <a class="link-here" href="">page link here</a>
+                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                  </div>
+                  <div class="project-image-holder">
+                    <h4 class="project-title">project name</h4>
+                    <img class="project-image" src="./images/images/1095394241.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                    <a class="link-here" href="">page link here</a>
+                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                  </div>
+                  <div class="project-image-holder">
+                    <h4 class="project-title">project name</h4>
+                    <img class="project-image" src="./images/images/1099898433.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                    <a class="link-here" href="">page link here</a>
+                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                  </div>
+                  <div class="project-image-holder">
+                    <h4 class="project-title">project name</h4>
+                    <img class="project-image" src="./images/images/1123572748.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                    <a class="link-here" href="">page link here</a>
+                    <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                  </div>
+                </div>
+                <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
+              </div>
+              <!-- popup end here  -->
+
+              <!-- popup-services start here -->
            <div class="project-box">
-               <i class="uil uil-users-alt"></i>
+               <i class="uil uil-users-alt" id="trigger2"></i>
                <h3>Clients</h3>
                <label>0 Happy Clients</label>
            </div>
+
+            <div id="popup-services" class="popup-services">
+              <h2 class="popup-title">Project Gallery</h2>
+              <div class="popup-main-content">
+                <div class="project-image-holder">
+                  <h4 class="project-title">project name</h4>
+                  <img class="project-image" src="./images/images/1281728383.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                  <a class="link-here" href="">page link here</a>
+                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                </div>
+                <div class="project-image-holder">
+                  <h4 class="project-title">project name</h4>
+                  <img class="project-image" src="./images/images/1095394241.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                  <a class="link-here" href="">page link here</a>
+                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                </div>
+                <div class="project-image-holder">
+                  <h4 class="project-title">project name</h4>
+                  <img class="project-image" src="./images/images/1099898433.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                  <a class="link-here" href="">page link here</a>
+                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                </div>
+                <div class="project-image-holder">
+                  <h4 class="project-title">project name</h4>
+                  <img class="project-image" src="./images/images/1123572748.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                  <a class="link-here" href="">page link here</a>
+                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                </div>
+              </div>
+              <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
+            </div>
+           <!-- popup-services end here -->
+
+           <!-- popup-others start here -->
            <div class="project-box">
-               <i class="uil uil-award"></i>
+               <i class="uil uil-award" id="trigger3"></i>
                <h3>Experiencce</h3>
                <label>1 Year in web development</label>
            </div>
+
+            <div id="popup-others" class="popup-others">
+              <h2 class="popup-title">Project Gallery</h2>
+              <div class="popup-main-content">
+                <div class="project-image-holder">
+                  <h4 class="project-title">project name</h4>
+                  <img class="project-image" src="./images/images/1079609014.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                  <a class="link-here" href="https://ardevazsign.github.io/goit-teamproject-02">page link here</a>
+                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                </div>
+                <div class="project-image-holder">
+                  <h4 class="project-title">project name</h4>
+                  <img class="project-image" src="./images/images/1123572748.jpg" width="350" height="140" alt="ardevazsign"> <br>
+                  <a class="link-here" href="">page link here</a>
+                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+                </div>
+              </div>
+              <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
+            </div>
+
+           <!--  popup-others end here -->
         </div>
       </section>
+
+
       <!-- Contact Section  -->
       <section class="section sec-contact" id="contact">
          <div class="top-header">

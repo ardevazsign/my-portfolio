@@ -232,28 +232,86 @@ body.dark #moon {
   padding-left: 20px;
   margin-top: 10%;
 }
+/* --- May 27, 2024 Monday Dynamic & Static */
 
-.featured-text .hello {
+.hero-holder {
+  display: inline-flex;
+}
+
+.hero-holder .hello-static .static-txt {
+  color: var(--logo-color);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero-holder .dynamic-txts {
+  margin-left: 50px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts .dynamic-txt {
+  color: var(--gray-color);
+  list-style: none;
+  font-size: 60px;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+
+}
+
+.dynamic-txts .dynamic-txt .typedText {
+  position: relative;
+}
+
+.dynamic-txts .dynamic-txt .typedText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 130%;
+  width: 100%;
+  background: var(--box-color);
+  border-left: 2px solid var(--logo-color);
+  animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0px 35px;
+  }
+}
+
+/*  ----------- End here static and dynaic---------- */
+/* .featured-text .hello {
   font-size: 60px;
   font-weight: 500;
   margin-bottom: -20px;
   color: var(--text-color);
-}
+} */
 
-.featured-name {
+/* .featured-name {
   font-size: 50px;
   font-weight: 600;
   margin-block: 20px;
   color: var(--gray-color);
   margin-bottom: 10px;
-}
-.typedText {
+} */
+/* .typedText {
   font-family: sans-serif;
   color: var(--gray-color);
   font-size: 8px;
   font-weight: 600;
   text-transform: capitalize;
-}
+} */
 .text-info {
   font-family: sans-serif;
   text-align: justify;
@@ -650,7 +708,162 @@ body.dark #moon {
   font-size: 50px;
   color: var(--gray-color);
   margin-bottom: 25px;
+  padding: 20px 28px;
 }
+
+/*  May 25, 2024 Project section start here  */
+
+.project-box>i:hover {
+  color: var(--logo-color) !important;
+  background-color: var(--box-color);
+  padding: 20px 28px;
+  border-radius: 100%;
+
+
+}
+
+.popup .popup-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: .5rem;
+  color: var(--text-color);
+}
+
+.project-image-holder {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  border-radius: .5rem;
+}
+
+.project-image {
+  margin: 1rem;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.link-here {
+  color: var(--text-color);
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.project-para {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+  margin: .6rem;
+}
+
+#popup {
+  background: var(--box-color);
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1300px;
+  padding: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  padding: 20px;
+  z-index: 2;
+  transition: 0.5s;
+  display: none;
+  /* opacity: 0;
+  visibility: hidden; */
+}
+
+/* #popup.active{
+  top: 55%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+} */
+#popup-services {
+  background: var(--box-color);
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1300px;
+  padding: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  padding: 20px;
+  z-index: 2;
+  transition: 0.5s;
+  display: none;
+  /* opacity: 0;
+  visibility: hidden;
+} */
+  /* #popup-services.active{
+  top: 55%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s; */
+}
+
+#popup-others {
+  background: var(--box-color);
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1300px;
+  padding: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  padding: 20px;
+  z-index: 2;
+  transition: 0.5s;
+  display: none;
+  /* opacity: 0;
+  visibility: hidden; */
+}
+
+/* #popup-others.active{
+  top: 55%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+} */
+.popup-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* .popup-close{
+    position: absolute;
+    top: 0;
+    left: 83.2%;
+    background-color: var(--logo-color);
+    color: var(--box-color);
+    text-decoration: none;
+    margin: 1rem;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.popup-close:hover{
+  background: var(--mode-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .5rem 2rem;
+} */
+
+/* May 25, 2024 Project section end here */
+
 .project-box label {
   font-size: 15px;
   color: var(--text-color);
