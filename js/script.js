@@ -55,75 +55,6 @@ document.addEventListener('click', (event) => {
   }
 });
 
-
-
-let sections = document.querySelectorAll('.section');
-
-let navbarLink = document.querySelectorAll('.nav_menu_list .nav_list .nav-link');
-
-
-
-
-
-
-// const certHtml = document.querySelector('.html');
-// const certCss = document.querySelector('.css');
-// const certJavascript = document.querySelector('.javascript');
-// const certReact = document.querySelector('.react');
-
-// let certHolder = document.getElementById('.cert-holder')
-
-// let contentForm = document.querySelectorAll('.certificate');
-
-// // const scrollToAboutBtn = document.querySelectorAll('.close-cert');
-
-// const aboutSection = document.getElementById('about');
-
-// document.querySelector('.close-cert').onclick = () => {
-//     certHtml.classList.remove('active');
-//     certCss.classList.remove('active');
-//     certJavascript.classList.remove('active');
-//   certReact.classList.remove('active');
-  
-
-// };
-
-
-
-
-// document.querySelector('#html').onclick = () =>{
-//   certHtml.classList.toggle('active');
-
-// };
-// document.querySelector('#css').onclick = () =>{
-//      certCss.classList.toggle('active');
-// };
-// document.querySelector('#javascript').onclick = () =>{
-//      certJavascript.classList.toggle('active');
-// };
-// document.querySelector('#react').onclick = () =>{
-//      certReact.classList.toggle('active');
-// };
-
-// window.onscroll = () => {
-  
-   
-//     sections.forEach(sec => {
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop;
-//         let height = sec.offsetHeight;
-//         let id = sec.getAttribute('id');
-
-//         if(top >= offset && top < offset + height) {
-//             navbarLink.forEach(links => {
-//                 links.classList.remove('active');
-//                 document.querySelector('.nav_menu_list .nav_list .nav-link[href*=' + id + ']').classList.add('active');    
-//             });
-//         };
-//     });
-// };
-
-
 // function myMenuFunction() {
 //   var menuBth = document.getElementById("myNavMenu");
 
@@ -134,14 +65,7 @@ let navbarLink = document.querySelectorAll('.nav_menu_list .nav_list .nav-link')
 //   }
 // }
 
-// // dark mode
 
-// const body = document.querySelector("body"),
-//   toggleSwitch = document.getElementById("toggle -switch");
-
-// toggleSwitch.addEventListener("click", () => {
-//   body.classList.toggle("dark");
-// })
   
 // // ---- typing effect
 
@@ -167,15 +91,14 @@ let navbarLink = document.querySelectorAll('.nav_menu_list .nav_list .nav-link')
 // sr.reveal(".text-info", { delay: 200 });
 
 
+// var icon = document.getElementById('icon');
 
-
-
-// let sections = document.querySelectorAll('.section');
-
-// let navbarLink = document.querySelectorAll('.nav_menu_list .nav_list .nav-link');
-
-
-
+// icon.onclick = function(){
+//   document.body.classList.toggle("dark-theme");
+//   if(document.body.classList.contains("dark-them")){
+//     icon.src = "image"
+//   }
+// }
 
 
 
