@@ -390,12 +390,12 @@ body.dark #moon {
   75% {
     border: 3px solid var(--mode-color);
     outline: 3px solid white;
-    left: 216px; 
+    left: 145px; 
   }
   100% {
     border:  3px solid white;
     outline: 3px solid var(--mode-color);
-    left: 145px;
+    left: 216px;
   }
 }
 .social_icons:hover .icon_circle {
@@ -679,21 +679,26 @@ body.dark #moon {
   color: var(--gray-color);
   margin-bottom: 25px;
   padding: 20px 28px;
+  
 }
 /*  May 25, 2024 Project section start here  */
 
-.project-box>i:hover {
+.project-box > i:hover {
   color: var(--logo-color) !important;
   background-color: var(--box-color);
   padding: 15px 28px;
   border-radius: 100%;
+  border: 3px solid gray;
 }
 .popup-services .popup-title,
 .popup-others .popup-title,
 .popup .popup-title {
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
+  text-transform:uppercase;
+  background: chartreuse;
+  width: 99%;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin: .5rem;
   color: var(--text-color);
 }
@@ -702,29 +707,34 @@ body.dark #moon {
   border-radius: .5rem;
 }
 .project-image {
-  margin: 1rem;
+  margin: 1.2rem;
 }
 .project-title {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: var(--text-color);
   margin-top: 1rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+.link-color{
+  color: blue;
 }
 .link-here {
   color: var(--text-color);
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
 }
 .project-para {
-  font-size: .8rem;
+  font-size: .6rem;
   font-weight: 600;
   color: var(--text-color);
   text-align: center;
-  margin: .6rem;
+  margin: .6rem 1rem 1rem 1rem;
+  width: 350px;
+  text-indent: 10px;
 }
 #popup {
   background: var(--box-color);
