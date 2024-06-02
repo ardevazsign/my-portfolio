@@ -1099,7 +1099,7 @@ footer {
 
 
 /* media query 1024px */
-@media only screen and (mix-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .featured-text {
     padding: 0;
   }
@@ -1110,7 +1110,7 @@ footer {
   }
 }
 
-@media only screen and (mix-width:900px ) {
+@media only screen and (max-width:900px ) {
   .nav-menu-btn {
     display: none;
   }
