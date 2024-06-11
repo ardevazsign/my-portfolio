@@ -390,12 +390,12 @@ body.dark #moon {
   75% {
     border: 3px solid var(--mode-color);
     outline: 3px solid white;
-    left: 145px; 
+    left: 216px; 
   }
   100% {
     border:  3px solid white;
     outline: 3px solid var(--mode-color);
-    left: 216px;
+    left: 145px;
   }
 }
 .social_icons:hover .icon_circle {
@@ -679,26 +679,21 @@ body.dark #moon {
   color: var(--gray-color);
   margin-bottom: 25px;
   padding: 20px 28px;
-  
 }
 /*  May 25, 2024 Project section start here  */
 
-.project-box > i:hover {
+.project-box>i:hover {
   color: var(--logo-color) !important;
   background-color: var(--box-color);
   padding: 15px 28px;
   border-radius: 100%;
-  border: 3px solid gray;
 }
 .popup-services .popup-title,
 .popup-others .popup-title,
 .popup .popup-title {
   text-align: center;
-  text-transform:uppercase;
-  background: chartreuse;
-  width: 99%;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   margin: .5rem;
   color: var(--text-color);
 }
@@ -707,34 +702,29 @@ body.dark #moon {
   border-radius: .5rem;
 }
 .project-image {
-  margin: 1.2rem;
+  margin: 1rem;
 }
 .project-title {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--text-color);
   margin-top: 1rem;
-  text-transform: uppercase;
-}
-.link-color{
-  color: blue;
+  text-transform: capitalize;
 }
 .link-here {
   color: var(--text-color);
   margin-left: 1rem;
-  font-size: .8rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
 }
 .project-para {
-  font-size: .6rem;
+  font-size: .8rem;
   font-weight: 600;
   color: var(--text-color);
   text-align: center;
-  margin: .6rem 1rem 1rem 1rem;
-  width: 350px;
-  text-indent: 10px;
+  margin: .6rem;
 }
 #popup {
   background: var(--box-color);
@@ -1109,7 +1099,7 @@ footer {
 
 
 /* media query 1024px */
-@media only screen and (max-width: 1024px) {
+@media only screen and (mix-width: 1024px) {
   .featured-text {
     padding: 0;
   }
@@ -1120,7 +1110,7 @@ footer {
   }
 }
 
-@media only screen and (max-width:900px ) {
+@media only screen and (mix-width:900px ) {
   .nav-menu-btn {
     display: none;
   }

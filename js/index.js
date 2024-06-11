@@ -1,4 +1,15 @@
-//  nav function
+// nav menu
+function myMenuFunction() {
+  var menuBth = document.getElementById("myNavMenu");
+
+  if (menuBth.className === "nav-menu") {
+      menuBth.className += "responsive";
+  } else {
+    menuBth.className = "nav-menu";
+  }
+}
+
+//  nav function or active link
 let sections = document.querySelectorAll('.section');
 let navbarLink = document.querySelectorAll('.nav-menu .nav_menu_list .nav_list .nav-link');
 
@@ -20,19 +31,12 @@ window.onscroll = () => {
 
 //  dark and light mode
 
-
-
 const body = document.querySelector("body"),
   toggleSwitch = document.getElementById("toggle-switch");
 
 toggleSwitch.addEventListener("click", () => {
   body.classList.toggle("dark");
-})
-
-
-
-
-
+});
 
 //  lead to my messenger
 const messageOwnerBtn = document.getElementById('messageOwner');
@@ -60,9 +64,7 @@ function sendwhatsapp(){
   +"This is message from Inquery";
 
   window.open(url, '_blank').focus();
-
 }
-
 document.getElementById('myForm').addEventListener('submit', function(event) {
         event.preventDefault();
 

@@ -8,7 +8,10 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+  <link rel="stylesheet" href="./sass/index.css">
 </head>
 <body>
   <!-- Nav Menu -->
@@ -23,19 +26,19 @@
         <ul class="nav_menu_list">
           <li class="nav_list">
             <a href="#home" class="nav-link active">Home</a>
-            <!-- <div class="circle"></div> -->
+            <div class="circle"></div>
           </li>
           <li class="nav_list">
             <a href="#about" class="nav-link">About</a>
-            <!-- <div class="circle"></div> -->
+            <div class="circle"></div>
           </li>
           <li class="nav_list">
             <a href="#projects" class="nav-link">Projects</a>
-            <!-- <div class="circle"></div> -->
+            <div class="circle"></div>
           </li>
           <li class="nav_list">
             <a href="#contact" class="nav-link">Contact</a>
-            <!-- <div class="circle"></div> -->
+            <div class="circle"></div>
           </li>
         </ul>
     </div>
@@ -57,49 +60,54 @@
     <main class="wrapper">
       <section class="featured-box section" id="home">
         <div class="featured-text">
+          <div class="hello">
+            <p class="hello-para"> Hello I'm</p>
+          </div>
+          <div class="featured-name">
+            <span class="typedText"></span>
+          </div>
+          <div class="text-info">
+            <p> 
+                     I'm Owen, a Web Developer with one year of boot camp training experience 
+            and hold a certificate in this field. I am confident and enthusiatic 
+            about creating websites for potential clients. I am fully capable and eager
+            to collaborate effectively with clients.  
+            </p>
+         </div>
+         <div class="text-btn">
+          <button id="messageOwner" class="btn hire-btn">Hire Me</button>
+          <a href="https://ardevazsign.github.io/OwenSaavedraCv" target="_blank" class="uil uil-file btn"> View CV </a>
+          <a href="ardevazsign_github.pdf"  download  class="uil uil-file btn"> Download CV</a>
+        </div>
+        <div class="social-icons">
+          <div class="icon_circle"></div>
+          <div class="icon"><a href="https://www.instagram.com" target="_blank" class="uil uil-instagram-alt"></a></div>
+          <div class="icon"><a href="https://www.linkedin.com" target="_blank" class="uil uil-linkedin-alt"></a></div>
+          <div class="icon"><a href="https://www.facebook.com" target="_blank" class="uil uil-facebook"></a></div>
+          <div class="icon"><a href="https://www.github.com" target="_blank" class="uil uil-github-alt"></a></div>
+        </div>
+         <!-- down here is featured-txt end tag -->
+      </div>
                   <!-- May 27, 2024  -->
-        <h1 class="hero-title">Hello!</h1>
+        <!-- <h1 class="hero-title">Hello!</h1>
           <div class="hero-holder">
             <div class="hello-static">
               <p class="static-txt">I'm&nbsp;a</p>
-            </div>
-            <ul class="dynamic-txts">
+            </div
+
+            class="dynamic-txts"
+
+            <ul class="featured-name">
               <li class="dynamic-txt"><span class="typedText">Freelancer</span></li>
               <li class="dynamic-txt"><span class="typedText">Developer</span></li>
               <li class="dynamic-txt"><span class="typedText">Designer</span></li>
               <li class="dynamic-txt"><span class="typedText">Coder</span></li>
             </ul>
-          </div>
-          
+          </div> -->
         <!--    end here    -->
-
-           <div class="text-info">
-              <p> 
-                       I'm Owen, a Web Developer with one year of boot camp training experience 
-              and hold a certificate in this field. I am confident and enthusiatic 
-              about creating websites for potential clients. I am fully capable and eager
-              to collaborate effectively with clients.  
-              </p>
-           </div>
-           <div class="text-btn">
-              <button id="messageOwner" class="btn hire-btn">Hire Me</button>
-              <a href="https://ardevazsign.github.io/OwenSaavedraCv" target="_blank" class="uil uil-file btn"> View CV </a>
-              <a href="ardevazsign_github.pdf"  download  class="uil uil-file btn"> Download CV</a>
-           </div>
-           
-           <div class="social-icons">
-             <div class="icon_circle"></div>
-             <div class="icon"><a href="https://www.instagram.com" target="_blank" class="uil uil-instagram-alt"></a></div>
-             <div class="icon"><a href="https://www.linkedin.com" target="_blank" class="uil uil-linkedin-alt"></a></div>
-             <div class="icon"><a href="https://www.facebook.com" target="_blank" class="uil uil-facebook"></a></div>
-             <div class="icon"><a href="https://www.github.com" target="_blank" class="uil uil-github-alt"></a></div>
-           </div>
-        </div>
         <div class="featured-image">
           <div class="image">
-            <img src="./images/owen107.jpg" width="225" height="400"
-            
-            alt="ArdevazSign">
+            <img src="./images/owen107.jpg" alt="ArdevazSign">
           </div>
         </div>
       </section>
@@ -213,144 +221,213 @@
         </div>
 <!-- popup start here -->
 
-        <div class="project-container">
-           <div class="project-box">
-               <i class="uil uil-briefcase-alt" id="trigger1"></i>
-               <h3 class="sub-title">Completed</h3>
-               <label>28 Finished Projects</label>
-           </div>
+<div class="project-container">
+  <div class="project-box">
+      <i class="uil uil-briefcase-alt" id="trigger1"></i>
+      <h3 class="sub-title">Completed</h3>
+      <label>28 Finished Projects</label>
+  </div>
 
-              <div id="popup" class="popup">
-                <h2 class="popup-title">Project Gallery</h2>
-                <div class="popup-main-content">
-                  <div class="project-image-holder">
-                    <h4 class="project-title">Filmoteka</h4>
-                    <img class="project-image" src="./images/project image/filmoteka.png" width="350" height="140" alt="ardevazsign"> <br>
-                    <a class="link-here" href="https://ardevazsign.github.io/goit-teamproject-02" target="_blank">page link: <span class="link-color"> Filmoteka</span></a>
-                    <p class="project-para">Filmoteka is our team project in our boot camp at goit using javascript as a programing language and working with team is the main goal here to practise.</p>
-                  </div>
-                  <div class="project-image-holder">
-                    <h4 class="project-title">Fresh harvest fruits</h4>
-                    <img class="project-image" src="./images/project image/fresh fruits.png" width="350" height="140" alt="ardevazsign"> <br>
-                    <a class="link-here" href="https://freaklord11.github.io/goit-team-project01" target="_blank">page link: <span class="link-color"> Fresh harvest fruits</span></a>
-                    <p class="project-para">fresh harvest fruits is my first project with team. as a team project with a goal to master working collaboration mastering the skill using html and css is the main purpose to enhance also.</p>
-                  </div>
-                  <div class="project-image-holder">
-                    <h4 class="project-title">My 1st project in boot camp </h4>
-                    <img class="project-image" src="./images/project image/Html-Css.png" width="350" height="140" alt="ardevazsign"> <br>
-                    <a class="link-here" href="https://ardevazsign.github.io/goit-markup-hw-07/" target="_blank">page link: <span class="link-color"> My first website</span></a>
-                    <p class="project-para">This is my first project in my boot camp training, this project start from exicution of html and css that has the aim to familiarization using that two the back bone and the designing to give color on it.</p>
-                  </div>
-                  <div class="project-image-holder">
-                    <h4 class="project-title">My First Client</h4>
-                    <img class="project-image" src="./images/project image/1st Client.png" width="350" height="140" alt="ardevazsign"> <br>
-                    <a class="link-here" href="https://github.com/ardevazsign/ardevazconstruction" target="_blank">page link:
-                      <span class="link-color"> Construction Website</span></a>
-                    <p class="project-para">This website requested by my brother to make, he is civil engineer and this website has already the domain name of https://construction.ardevaz.tech/</p>
-                  </div>
-                  <div class="project-image-holder">
-                    <h4 class="project-title">My Own Project</h4>
-                    <img class="project-image" src="./images/project image/watch website.png" width="350" height="140" alt="ardevazsign"> <br>
-                    <a class="link-here" href="https://ardevazsign.github.io/newo-3/" target="_blank" >page link: <span class="link-color"> Watch Store Website</span></a>
-                    <p class="project-para">This project for my own likes to do, it has an aim for my self practise more making  website. or doing more project giving me happiness or my daily life.</p>
-                  </div>
-                  <div class="project-image-holder">
-                    <h4 class="project-title">My home work n javascript</h4>
-                    <img class="project-image" src="./images/project image/PixabayAPI.png" width="350" height="140" alt="ardevazsign"> <br>
-                    <a class="link-here" href="https://ardevazsign.github.io/newo-5/" target="_blank">page link: <span class="link-color"> Javascript using API</span></a>
-                    <p class="project-para">this project is serve as my homework in GOIT Boot Camp. This home work has an aim to learn how to use javascript programing usin API.</p>
-                  </div>
-                </div>
-                <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
-              </div>
-              <!-- popup end here  -->
+     <div id="popup" class="popup">
+       <h2 class="popup-title">Project Gallery</h2>
+       <div class="popup-main-content">
+         <div class="project-image-holder">
+           <h4 class="project-title">Filmoteka</h4>
+           <img class="project-image" src="./images/project image/filmoteka.png" width="350" height="140" alt="ardevazsign"> <br>
+           <a class="link-here" href="https://ardevazsign.github.io/goit-teamproject-02" target="_blank">page link: <span class="link-color"> Filmoteka</span></a>
+           <p class="project-para">The Filmoteka project is our JavaScript team project in my boot camp at GOIT Philippines.
+                                   I led this team project with four members,
+                                   handling most tasks to meet deadlines. I deligate the presentation to our scrum master
+                                   and I realized that being a team leader demands dedication to prevent project failures. 
+                                  </p>
+         </div>
+         
+         <div class="project-image-holder">
+           <h4 class="project-title">Fresh harvest fruits</h4>
+           <img class="project-image" src="./images/project image/fresh fruits.png" width="350" height="140" alt="ardevazsign"> <br>
+           <a class="link-here" href="https://freaklord11.github.io/goit-team-project01" target="_blank">page link: <span class="link-color"> Fresh harvest fruits</span></a>
+           <p class="project-para">"Fresh Harvest Fruits" was my first team project. I was responsible for creating the sections that
+                                    explain how to order fresh fruits on the website. As a member of the team project, 
+                                    I gained experience in working collaboratively, which closely resembles real-world job scenarios.
+                                    This project also allowed me to utilize my HTML and CSS skills, which were essential for its development.
+                                 </p>
+         </div>
+         <div class="project-image-holder">
+           <h4 class="project-title">My 1st project in boot camp </h4>
+           <img class="project-image" src="./images/project image/Html-Css.png" width="350" height="140" alt="ardevazsign"> <br>
+           <a class="link-here" href="https://ardevazsign.github.io/goit-markup-hw-07/" target="_blank">page link: <span class="link-color"> My first website</span></a>
+           <p class="project-para">This is my first website, created as a project to solidify my knowledge of HTML and CSS.
+                                   I was very excited to learn new skills during this project, and i truly enjoyed the process.
+                                    This project also taught me how to use Github, VS code, and other online tools to build a website.
+                                  </p>
+         </div>
+         <div class="project-image-holder">
+           <h4 class="project-title">My First Client</h4>
+           <img class="project-image" src="./images/project image/1st Client.png" width="350" height="140" alt="ardevazsign"> <br>
+           <a class="link-here" href="https://ardevazsign.github.io/ardevazconstruction/" target="_blank">page link:
+             <span class="link-color"> Construction Website</span></a>
+           <p class="project-para">"I consider this website that I made as my first client,
+                                  and my client is my brother. He is a civil engineer currently working
+                                  in a construction company based in Davao. He has a dream of starting his own construction firm, 
+                                  which is why he requested me to create a website for his dream construction company.
+                                  Now, this website has the domain name https://construction.ardevaz.tech/"
+                                </p>
+         </div>
+         <div class="project-image-holder">
+           <h4 class="project-title">My Own Project</h4>
+           <img class="project-image" src="./images/project image/watch website.png" width="350" height="140" alt="ardevazsign"> <br>
+           <a class="link-here" href="https://ardevazsign.github.io/newo-3/" target="_blank" >page link: <span class="link-color"> Watch Store Website</span></a>
+           <p class="project-para">"Watch Store Website" is a project I completed independently to further practise my web development skills.
+                                  I aimed to explore different website types, but time constraints limited the scope.
+                                  Nonetheless, I'm eager to create more diverse projects and showcase them in my portfolio.
+                                </p>
+         </div>
+         <div class="project-image-holder">
+           <h4 class="project-title">My home work n javascript</h4>
+           <img class="project-image" src="./images/project image/PixabayAPI.png" width="350" height="140" alt="ardevazsign"> <br>
+           <a class="link-here" href="https://ardevazsign.github.io/newo-5/" target="_blank">page link: <span class="link-color"> Javascript using API</span></a>
+           <p class="project-para">This project taught me how to integrate APIs into a JavaScript project.
+                                   While I have worked on several small projects using JavaScript, 
+                                   This Particular project amazed me with its use of APIs.
+                                   It successfully rendered all the available data that was intended to be shared.
+                                  </p>
+         </div>
+       </div>
+       <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
+     </div>
+     <!-- popup end here  -->
 
-              <!-- popup-services start here -->
-           <div class="project-box">
-               <i class="uil uil-users-alt" id="trigger2"></i>
-               <h3 class="sub-title">Clients</h3>
-               <label>0 Happy Clients</label>
-           </div>
+     <!-- popup-services start here -->
+  <div class="project-box">
+      <i class="uil uil-users-alt" id="trigger2"></i>
+      <h3 class="sub-title">Clients</h3>
+      <label>0 Happy Clients</label>
+  </div>
 
-            <div id="popup-services" class="popup-services">
-              <h2 class="popup-title">Project Gallery</h2>
-              <div class="popup-main-content">
-                <div class="project-image-holder">
-                  <h4 class="project-title">project name</h4>
-                  <img class="project-image" src="./images/images/1281728383.jpg" width="350" height="140" alt="ardevazsign"> <br>
-                  <a class="link-here" href="">page link here</a>
-                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
-                </div>
-                <div class="project-image-holder">
-                  <h4 class="project-title">project name</h4>
-                  <img class="project-image" src="./images/images/1095394241.jpg" width="350" height="140" alt="ardevazsign"> <br>
-                  <a class="link-here" href="">page link here</a>
-                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
-                </div>
-                <div class="project-image-holder">
-                  <h4 class="project-title">project name</h4>
-                  <img class="project-image" src="./images/images/1099898433.jpg" width="350" height="140" alt="ardevazsign"> <br>
-                  <a class="link-here" href="">page link here</a>
-                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
-                </div>
-                <div class="project-image-holder">
-                  <h4 class="project-title">project name</h4>
-                  <img class="project-image" src="./images/images/1123572748.jpg" width="350" height="140" alt="ardevazsign"> <br>
-                  <a class="link-here" href="">page link here</a>
-                  <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
-                </div>
-              </div>
-              <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
-            </div>
-           <!-- popup-services end here -->
+   <div id="popup-services" class="popup-services">
+     <h2 class="popup-title">Project Gallery</h2>
+     <div class="popup-main-content">
+       <div class="project-image-holder">
+         <h4 class="project-title">project name</h4>
+         <img class="project-image" src="./images/images/1281728383.jpg" width="350" height="140" alt="ardevazsign"> <br>
+         <a class="link-here" href="">page link here</a>
+         <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+       </div>
+       <div class="project-image-holder">
+         <h4 class="project-title">project name</h4>
+         <img class="project-image" src="./images/images/1095394241.jpg" width="350" height="140" alt="ardevazsign"> <br>
+         <a class="link-here" href="">page link here</a>
+         <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+       </div>
+       <div class="project-image-holder">
+         <h4 class="project-title">project name</h4>
+         <img class="project-image" src="./images/images/1099898433.jpg" width="350" height="140" alt="ardevazsign"> <br>
+         <a class="link-here" href="">page link here</a>
+         <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+       </div>
+       <div class="project-image-holder">
+         <h4 class="project-title">project name</h4>
+         <img class="project-image" src="./images/images/1123572748.jpg" width="350" height="140" alt="ardevazsign"> <br>
+         <a class="link-here" href="">page link here</a>
+         <p class="project-para">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Dignissimos, assumenda!</p>
+       </div>
+     </div>
+     <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
+   </div>
+  <!-- popup-services end here -->
 
-           <!-- popup-others start here -->
-           <div class="project-box">
-               <i class="uil uil-award" id="trigger3"></i>
-               <h3 class="sub-title">Certificates</h3>
-               <label>1 Year in web development</label>
-           </div>
+  <!-- popup-others start here -->
+  <div class="project-box">
+      <i class="uil uil-award" id="trigger3"></i>
+      <h3 class="sub-title">Certificates</h3>
+      <label>1 Year in web development</label>
+  </div>
+  <!-- copy down here -->
+   <div id="popup-others" class="popup-others">
+  
+     <h2 class="popup-title"> Training  Certificates </h2>
+     <div class="box-container">
 
-            <div id="popup-others" class="popup-others">
-              <h2 class="popup-title"> Training  Certificates </h2>
-              <div class="popup-main-content">
-                <div class="project-image-holder">
-                  <!-- <h4 class="project-title">project name</h4> -->
-                  <img class="project-image" src="./images/IPW.jpg" width="350" height="300" alt="ardevazsign"> <br>
-                  <p class="project-para">Training for what</p>
-                </div>
-                <div class="project-image-holder">
-                  <!-- <h4 class="project-title">project name</h4> -->
-                  <img class="project-image" src="./images/Manuel C. Saavedra Jr..png" width="350" height="300" alt="ardevazsign"> <br>
-                  <p class="project-para">Training for what</p>
-                </div>
-                <div class="project-image-holder">
-                  <!-- <h4 class="project-title">project name</h4> -->
-                  <img class="project-image" src="./images/Manuel C. Saavedra Jr_.pdf" width="350" height="300" alt="ardevazsign"> <br>
-                  <p class="project-para">Training for what</p>
-                </div>
-                <div class="project-image-holder">
-                  <!-- <h4 class="project-title">project name</h4> -->
-                  <img class="project-image" src="./images/Manuel C. Saavedra Jr.-esl.jpg" width="350" height="300" alt="ardevazsign"><br>
-                  <p class="project-para">Training for what</p>
-                </div>
-                <div class="project-image-holder">
-                  <!-- <h4 class="project-title">project name</h4> -->
-                  <img class="project-image" src="./images/Manuel C. Saavedra Jr.-esl.jpg" width="350" height="300" alt="ardevazsign"> <br>
-                  <p class="project-para">Training for what</p>
-                </div>
-                <div class="project-image-holder">
-                  <!-- <h4 class="project-title">project name</h4> -->
-                  <img class="project-image" src="./images/Manuel C. Saavedra Jr.-cct.jpg" width="350" height="300" alt="ardevazsign"> <br>
-                  <p class="project-para">Training for what</p>
-                </div>
-              </div>
-              <!-- <a href="#" onclick="toggle()" class="popup-close">close here</a> -->
-            </div>
-
+      <a href="./images/IPW.jpg" class="box">
+        <div class="image-box">
+          <img class="box-image" src="./images/IPW.jpg"  alt="ArdevazSign">
+        </div>
+        <div class="content-box">
+          <div class="box-info">
+            <h3 class="box-h3">certificate title</h3>
+            <p class="box-para"> details about certificate</p>
+          </div>
+          <i class="fas fa-plus plus"></i>
+        </div>
+      </a>
+      <a href="./images/Manuel C. Saavedra Jr..png" class="box">
+        <div class="image-box">
+          <img class="box-image" src="./images/Manuel C. Saavedra Jr..png"  alt="ArdevazSign">
+        </div>
+        <div class="content-box">
+          <div class="box-info">
+            <h3 class="box-h3">certificate title</h3>
+            <p class="box-para"> details about certificate</p>
+          </div>
+          <i class="fas fa-plus plus"></i>
+        </div>
+      </a>
+      <a href="./images/Manuel C. Saavedra Jr.-cct.jpg" class="box">
+        <div class="image-box">
+          <img class="box-image" src="./images/Manuel C. Saavedra Jr.-cct.jpg"  alt="ArdevazSign">
+        </div>
+        <div class="content-box">
+          <div class="box-info">
+            <h3 class="box-h3">certificate title</h3>
+            <p class="box-para"> details about certificate</p>
+          </div>
+          <i class="fas fa-plus plus"></i>
+        </div>
+      </a>
+      <a href="./images/Manuel C. Saavedra Jr..png" class="box">
+        <div class="image-box">
+          <img class="box-image" src="./images/Manuel C. Saavedra Jr..png"  alt="ArdevazSign">
+        </div>
+        <div class="content-box">
+          <div class="box-info">
+            <h3 class="box-h3">certificate title</h3>
+            <p class="box-para"> details about certificate</p>
+          </div>
+          <i class="fas fa-plus plus"></i>
+        </div>
+      </a>
+      <a href="./images/Manuel C. Saavedra Jr.-esl.jpg" class="box">
+        <div class="image-box">
+          <img class="box-image" src="./images/Manuel C. Saavedra Jr.-esl.jpg"  alt="ArdevazSign">
+        </div>
+        <div class="content-box">
+          <div class="box-info">
+            <h3 class="box-h3">certificate title</h3>
+            <p class="box-para">details about certificate</p>
+          </div>
+          <i class="fas fa-plus plus"></i>
+        </div>
+      </a>
+      <a href="./images/Manuel C. Saavedra Jr.-cct.jpg" class="box">
+        <div class="image-box">
+          <img class="box-image" src="./images/Manuel C. Saavedra Jr.-cct.jpg"  alt="ArdevazSign">
+        </div>
+        <div class="content-box">
+          <div class="box-info">
+            <h3 class="box-h3">certificate title</h3>
+            <p class="box-para"> details about certificate</p>
+          </div>
+          <i class="fas fa-plus plus"></i>
+        </div>
+      </a>
+      
+     </div>
+  
+   </div>
            <!--  popup-others end here -->
         </div>
       </section>
+      <!-- copy uphere -->
 
 
       <!-- Contact Section  -->
@@ -428,8 +505,15 @@
         </div>
     </footer>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal.js/4.0.9/scrollreveal.min.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/script.js"></script>
+
+  <script>
+    lightGallery(document.querySelector('.popup-others .box-container'));
+  </script>
+
 </body>
 </html>
